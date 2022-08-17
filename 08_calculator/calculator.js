@@ -22,8 +22,7 @@ const power = function(a, b) {
 
 const factorial = function(n) {
   if (n === 0) return 1;
-	const factorial = listNums(n).reduce((runningProduct, number) => runningProduct * number);
-  return factorial;
+  return multiply(listNums(n));
 };
 
 function listNums(n) {
